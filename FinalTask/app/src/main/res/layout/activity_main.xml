@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F543959F"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="109dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginLeft="158dp"
+        android:layout_marginTop="608dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginRight="157dp"
+        android:layout_marginBottom="75dp"
+        android:text="Start"
+        android:visibility="visible"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/FoodBalanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginRight="131dp"
+        android:autoText="false"
+        android:fontFamily="@font/bungee_shade"
+        android:text="Food "
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#3F51B5"
+        android:textIsSelectable="false"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:autoSizeTextType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <TextView
+        android:id="@+id/BalanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginRight="97dp"
+        android:layout_marginBottom="320dp"
+        android:fontFamily="@font/bungee_shade"
+        android:text="Balance"
+        android:textColor="#3F51B5"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/StartButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="366dp"
+        android:layout_height="272dp"
+        app:srcCompat="@drawable/newbalance"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Exercicio2</string>
+    <string name="txt_message">Enter a Message</string>
+    <string name="txt_send">Send</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My first App</string>
+    <string name="txt_editText1">Enter a Number</string>
+    <string name="txt_editText2">Enter a Number</string>
+    <string name="txt_Sum">SUM</string>
+    <string name="txt_result">Result:</string>
+</resources>

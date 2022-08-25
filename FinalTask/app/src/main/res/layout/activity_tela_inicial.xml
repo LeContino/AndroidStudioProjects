@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F543959F"
+    android:visibility="visible"
+    tools:context=".TelaInicial">
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="242dp"
+        android:layout_height="141dp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="562dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="242dp"
+        android:layout_height="141dp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="415dp"
+        android:layout_height="59dp"
+        android:background="  #F543959F"
+        app:tabBackground="#F543959F"
+        app:tabIconTint="@color/black"
+        app:tabIndicatorColor="#3F51B5"
+        app:tabIndicatorGravity="bottom"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#F5F3F4F4"
+        app:tabTextColor="#F6EFEF"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="242dp"
+        android:layout_height="141dp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <TextView
+        android:id="@+id/textView_Calorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calorias"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <TextView
+        android:id="@+id/textView_Proteinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="proteinas"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <TextView
+        android:id="@+id/textView_Gorduras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gorduras"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="514dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
