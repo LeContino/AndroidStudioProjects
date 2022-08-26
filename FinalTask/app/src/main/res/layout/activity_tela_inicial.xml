@@ -11,19 +11,27 @@
 
     <ProgressBar
         android:id="@+id/progressBar4"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="242dp"
-        android:layout_height="141dp"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="562dp" />
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="198dp"
+        android:layout_height="48dp"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="608dp" />
 
     <ProgressBar
         android:id="@+id/progressBar3"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="242dp"
-        android:layout_height="141dp"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="344dp" />
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="198dp"
+        android:layout_height="48dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="471dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="198dp"
+        android:layout_height="48dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="322dp" />
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="415dp"
@@ -37,54 +45,72 @@
         app:tabSelectedTextColor="#F5F3F4F4"
         app:tabTextColor="#F6EFEF"
         tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="1dp">
+        tools:layout_editor_absoluteY="-1dp">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Monday" />
+            android:text="Início" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tuesday" />
+            android:text="Cardápios" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Wednesday" />
+            android:text="Diário" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estatísticas" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurações" />
     </com.google.android.material.tabs.TabLayout>
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="242dp"
-        android:layout_height="141dp"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="139dp" />
 
     <TextView
         android:id="@+id/textView_Calorias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calorias"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="120dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="119dp" />
 
     <TextView
         android:id="@+id/textView_Proteinas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="proteinas"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="306dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="264dp" />
 
     <TextView
         android:id="@+id/textView_Gorduras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Gorduras"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="514dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="416dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="198dp"
+        android:layout_height="48dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <TextView
+        android:id="@+id/textView_proteinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carboidratos"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="549dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
