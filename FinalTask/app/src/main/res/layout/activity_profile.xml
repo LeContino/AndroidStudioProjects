@@ -12,32 +12,32 @@
         android:layout_width="98dp"
         android:layout_height="50dp"
         android:hint="em gramas"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="268dp" />
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="318dp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText13"
         android:layout_width="98dp"
         android:layout_height="50dp"
         android:hint="em gramas"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="369dp" />
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="507dp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText11"
         android:layout_width="98dp"
         android:layout_height="50dp"
         android:hint="em gramas"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="318dp" />
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="410dp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText10"
         android:layout_width="98dp"
         android:layout_height="50dp"
         android:hint="em gramas"
-        tools:layout_editor_absoluteX="315dp"
-        tools:layout_editor_absoluteY="428dp" />
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="597dp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText9"
@@ -70,7 +70,7 @@
         android:text="Recomendação de carboidratos"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="438dp" />
+        tools:layout_editor_absoluteY="557dp" />
 
     <TextView
         android:id="@+id/textView22"
@@ -78,8 +78,8 @@
         android:layout_height="wrap_content"
         android:text="Recomendação de gorduras"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="392dp" />
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="480dp" />
 
     <TextView
         android:id="@+id/textView21"
@@ -87,8 +87,8 @@
         android:layout_height="wrap_content"
         android:text="Recomendação de calorias"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="333dp" />
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="383dp" />
 
     <TextView
         android:id="@+id/textView20"
@@ -175,5 +175,5 @@
         android:text="Deseja adicionar alimentos fixos?"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="491dp" />
+        tools:layout_editor_absoluteY="647dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

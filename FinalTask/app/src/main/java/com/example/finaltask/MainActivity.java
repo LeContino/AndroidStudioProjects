@@ -63,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
         // The activity is about to be destroyed.
     }
 
-    public void Send(View view)
+    public void NextPage(View view)
     {
-        Button bt = (Button) findViewById(R.id.StartButton);
-        Intent i = new Intent(this, MainActivity.class);
+        //Button bt = (Button) findViewById(R.id.StartButton);
+        Intent i = new Intent(this, login.class);
         startActivity(i);
     }
 }

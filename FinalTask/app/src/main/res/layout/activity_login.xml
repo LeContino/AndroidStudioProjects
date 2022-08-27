@@ -16,23 +16,26 @@
         android:layout_marginLeft="158dp"
         android:layout_marginEnd="157dp"
         android:layout_marginRight="157dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="NextPage"
         android:text="Entrar"
         android:visibility="visible"
         app:backgroundTint="#3F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0"
         tools:visibility="visible" />
 
     <TextView
-        android:id="@+id/foodBalanceText2"
+        android:id="@+id/foodText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="131dp"
         android:layout_marginLeft="131dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="131dp"
         android:layout_marginRight="131dp"
         android:autoText="false"
@@ -46,10 +49,11 @@
         android:textStyle="bold"
         android:visibility="visible"
         app:autoSizeTextType="none"
+        app:layout_constraintBottom_toTopOf="@+id/balanceTextView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="30dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/balanceTextView2"
@@ -60,16 +64,15 @@
         android:layout_marginTop="136dp"
         android:layout_marginEnd="97dp"
         android:layout_marginRight="97dp"
-        android:layout_marginBottom="320dp"
         android:fontFamily="@font/bungee_shade"
         android:text="Balance"
         android:textColor="#3F51B5"
         android:textSize="60sp"
         android:textStyle="bold"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/StartButton"
+        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.598"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:visibility="visible" />
@@ -80,37 +83,48 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="41dp"
         android:text="Login:"
         android:textColor="#3F51B5"
         android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextSenha"
+        app:layout_constraintEnd_toStartOf="@+id/email"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="319dp" />
+        app:layout_constraintTop_toBottomOf="@+id/balanceTextView2" />
+
 
     <TextView
         android:id="@+id/TextSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="25dp"
         android:text="Senha:"
         android:textColor="#3F51B5"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="413dp" />
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_LembrarEmail"
+        app:layout_constraintEnd_toStartOf="@+id/editTextPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextLogin" />
 
     <EditText
         android:id="@+id/editTextPassword"
-        android:layout_width="251dp"
-        android:layout_height="46dp"
+        android:layout_width="263dp"
+        android:layout_height="41dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="29dp"
         android:ems="10"
         android:hint="senha"
         android:inputType="textPassword"
         android:onClick="GetSenha"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_LembrarEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/TextSenha"
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
@@ -123,50 +137,80 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
+        android:layout_marginBottom="43dp"
         android:hint="email"
         android:onClick="GetLogin"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.909"
         app:layout_constraintStart_toEndOf="@+id/TextLogin"
-        app:layout_constraintTop_toBottomOf="@+id/balanceTextView2" />
-
-    <CheckBox
-        android:id="@+id/CBLembrarConta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lembrar conta"
-        android:textColor="#3F51B5"
-        android:textSize="14sp"
-        app:buttonTint="#3F51B5"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="479dp" />
+        app:layout_constraintTop_toBottomOf="@+id/balanceTextView2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/EsqueceuSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="247dp"
+        android:layout_marginRight="247dp"
+        android:layout_marginBottom="14dp"
         android:clickable="true"
         android:text="Esqueceu a senha?"
         android:textColor="#094561"
         android:textIsSelectable="true"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="537dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_LembrarEmail" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="124dp"
         android:text="Não possui cadastro?"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="575dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EsqueceuSenha" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginRight="154dp"
         android:clickable="true"
         android:text="Cadastre-se"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="575dp" />
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        app:layout_constraintVertical_bias="0.803" />
+
+    <CheckBox
+        android:id="@+id/checkBox_LembrarEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="262dp"
+        android:layout_marginRight="262dp"
+        android:text="Lembrar email"
+        app:layout_constraintBottom_toTopOf="@+id/EsqueceuSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextSenha" />
 </androidx.constraintlayout.widget.ConstraintLayout>
