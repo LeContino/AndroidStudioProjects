@@ -15,7 +15,7 @@
         tools:context=".Profile">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText14"
+            android:id="@+id/editTextProteinas"
             android:layout_width="98dp"
             android:layout_height="50dp"
             android:hint="em gramas"
@@ -23,7 +23,7 @@
             tools:layout_editor_absoluteY="318dp" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText13"
+            android:id="@+id/editTextGorduras"
             android:layout_width="98dp"
             android:layout_height="50dp"
             android:hint="em gramas"
@@ -31,7 +31,7 @@
             tools:layout_editor_absoluteY="507dp" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText11"
+            android:id="@+id/editTextCalorias"
             android:layout_width="98dp"
             android:layout_height="50dp"
             android:hint="em gramas"
@@ -39,7 +39,7 @@
             tools:layout_editor_absoluteY="410dp" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText10"
+            android:id="@+id/editTextCarboidratos"
             android:layout_width="98dp"
             android:layout_height="50dp"
             android:hint="em gramas"
@@ -47,7 +47,7 @@
             tools:layout_editor_absoluteY="597dp" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText9"
+            android:id="@+id/editTextPeso"
             android:layout_width="264dp"
             android:layout_height="49dp"
             android:hint="Peso"
@@ -55,7 +55,7 @@
             tools:layout_editor_absoluteY="208dp" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText6"
+            android:id="@+id/editTexIdade"
             android:layout_width="264dp"
             android:layout_height="49dp"
             android:hint="Idade"
@@ -63,7 +63,7 @@
             tools:layout_editor_absoluteY="149dp" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText"
+            android:id="@+id/editTextName"
             android:layout_width="264dp"
             android:layout_height="49dp"
             android:hint="Nome"
