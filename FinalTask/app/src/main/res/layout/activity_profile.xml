@@ -11,126 +11,207 @@
         android:id="@+id/editText14"
         android:layout_width="98dp"
         android:layout_height="50dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="291dp"
+        android:layout_marginRight="291dp"
         android:hint="em gramas"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="318dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText13"
         android:layout_width="98dp"
         android:layout_height="50dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="287dp"
+        android:layout_marginRight="287dp"
         android:hint="em gramas"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="507dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText11"
         android:layout_width="98dp"
         android:layout_height="50dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="287dp"
+        android:layout_marginRight="287dp"
         android:hint="em gramas"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="410dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText10"
         android:layout_width="98dp"
         android:layout_height="50dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="291dp"
+        android:layout_marginRight="291dp"
         android:hint="em gramas"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="597dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText9"
         android:layout_width="264dp"
         android:layout_height="49dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
         android:hint="Peso"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="208dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText6"
         android:layout_width="264dp"
         android:layout_height="49dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
         android:hint="Idade"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="149dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText"
         android:layout_width="264dp"
         android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
         android:hint="Nome"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="93dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
         android:text="Recomendação de carboidratos"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="557dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText13" />
 
     <TextView
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginRight="133dp"
         android:text="Recomendação de gorduras"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="480dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText11" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
         android:text="Recomendação de calorias"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="383dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText14" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginRight="133dp"
         android:text="Recomendação de proteinas"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="283dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText9" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
         android:text="Peso:"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="220dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintEnd_toStartOf="@+id/editText9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
         android:text="Idade:"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="162dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toStartOf="@+id/editText6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="415dp"
         android:layout_height="59dp"
         android:background="  #F543959F"
         android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:tabBackground="#F543959F"
         app:tabIconTint="@color/black"
         app:tabIndicatorColor="#3F51B5"
         app:tabIndicatorGravity="bottom"
         app:tabMode="fixed"
         app:tabSelectedTextColor="#F5F3F4F4"
-        app:tabTextColor="#F6EFEF"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="4dp">
+        app:tabTextColor="#F6EFEF">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
@@ -162,18 +243,29 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="48dp"
         android:text="Nome:"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="106dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="340dp"
         android:layout_height="37dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
         android:clickable="true"
         android:text="Deseja adicionar alimentos fixos?"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="647dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText10" />
 </androidx.constraintlayout.widget.ConstraintLayout>

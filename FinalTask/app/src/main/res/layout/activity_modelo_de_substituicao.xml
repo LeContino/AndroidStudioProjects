@@ -7,6 +7,16 @@
     android:background="#F543959F"
     tools:context=".modeloDeSubstituicao">
 
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modelo"
+        android:textOff="fixos"
+        android:textOn="flexiveis"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="118dp" />
+
     <Button
         android:id="@+id/button6"
         android:layout_width="41dp"
@@ -73,32 +83,6 @@
         android:textSize="20sp"
         tools:layout_editor_absoluteX="151dp"
         tools:layout_editor_absoluteY="83dp" />
-
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="325dp"
-        android:layout_height="36dp"
-        android:background="  #F543959F"
-        android:clickable="true"
-        app:tabBackground="#F543959F"
-        app:tabIconTint="@color/black"
-        app:tabIndicatorColor="#3F51B5"
-        app:tabIndicatorGravity="bottom"
-        app:tabMode="fixed"
-        app:tabSelectedTextColor="#F5F3F4F4"
-        app:tabTextColor="#F6EFEF"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="125dp">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="fixos" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="modelos flexíveis" />
-    </com.google.android.material.tabs.TabLayout>
 
     <TextView
         android:id="@+id/textView9"

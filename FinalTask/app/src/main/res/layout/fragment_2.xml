@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment2">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#F543959F"
@@ -40,7 +39,7 @@
             app:tabSelectedTextColor="#F5F3F4F4"
             app:tabTextColor="#F6EFEF"
             tools:layout_editor_absoluteX="-2dp"
-            tools:layout_editor_absoluteY="4dp">
+            tools:layout_editor_absoluteY="-4dp">
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
@@ -61,32 +60,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Configurações" />
-        </com.google.android.material.tabs.TabLayout>
-
-        <com.google.android.material.tabs.TabLayout
-            android:layout_width="331dp"
-            android:layout_height="40dp"
-            android:background="  #F543959F"
-            android:clickable="true"
-            app:tabBackground="#F543959F"
-            app:tabIconTint="@color/black"
-            app:tabIndicatorColor="#3F51B5"
-            app:tabIndicatorGravity="bottom"
-            app:tabMode="fixed"
-            app:tabSelectedTextColor="#F5F3F4F4"
-            app:tabTextColor="#F6EFEF"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="125dp">
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="fixos" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="modelos flexíveis" />
         </com.google.android.material.tabs.TabLayout>
 
         <TextView
@@ -122,6 +95,16 @@
             android:textSize="20sp"
             tools:layout_editor_absoluteX="151dp"
             tools:layout_editor_absoluteY="83dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modelo"
+            android:textOff="fixos"
+            android:textOn="flexiveis"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="118dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
