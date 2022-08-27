@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F543959F"
+    tools:context=".GeradorDeCardapio">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="334dp"
+        android:layout_height="409dp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="415dp"
+        android:layout_height="59dp"
+        android:background="  #F543959F"
+        android:clickable="true"
+        app:tabBackground="#F543959F"
+        app:tabIconTint="@color/black"
+        app:tabIndicatorColor="#3F51B5"
+        app:tabIndicatorGravity="bottom"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#F5F3F4F4"
+        app:tabTextColor="#F6EFEF"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="4dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Início" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cardápios" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diário" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estatísticas" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurações" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="37dp"
+        android:layout_height="42dp"
+        android:text="+"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="653dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:background="  #F543959F"
+        android:clickable="true"
+        app:tabBackground="#F543959F"
+        app:tabIconTint="@color/black"
+        app:tabIndicatorColor="#3F51B5"
+        app:tabIndicatorGravity="bottom"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#F5F3F4F4"
+        app:tabTextColor="#F6EFEF"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="125dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fixos" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="modelos flexíveis" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criar cardápio fixo"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="598dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="37dp"
+        android:layout_height="42dp"
+        android:text="+"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="589dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="244dp"
+        android:layout_height="39dp"
+        android:text="Sortear cardápio a partir do modelo de substituição"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="656dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cardápios"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="83dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
