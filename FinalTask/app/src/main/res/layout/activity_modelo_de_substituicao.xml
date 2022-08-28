@@ -74,7 +74,7 @@
         android:layout_width="412dp"
         android:layout_height="57dp"
         android:layout_marginBottom="29dp"
-        android:background="  #F543959F"
+        android:background="#F543959F"
         android:clickable="true"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"

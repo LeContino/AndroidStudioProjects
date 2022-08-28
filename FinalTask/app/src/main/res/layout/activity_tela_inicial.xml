@@ -69,7 +69,7 @@
         android:id="@+id/tabLayout_Options"
         android:layout_width="415dp"
         android:layout_height="59dp"
-        android:background="  #F543959F"
+        android:background="#F543959F"
         android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

@@ -34,7 +34,7 @@
             android:id="@+id/tabLayout2"
             android:layout_width="415dp"
             android:layout_height="59dp"
-            android:background="  #F543959F"
+            android:background="#F543959F"
             android:clickable="true"
             app:layout_constraintBottom_toTopOf="@+id/textView6"
             app:layout_constraintEnd_toEndOf="parent"
