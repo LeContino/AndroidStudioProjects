@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F543959F"
+    android:background="@color/verde_agua"
     tools:context=".Profile">
 
     <com.google.android.material.textfield.TextInputEditText
@@ -204,12 +204,12 @@
         android:layout_width="415dp"
         android:layout_height="59dp"
         android:layout_marginTop="4dp"
-        android:background="#F543959F"
+        android:background="@color/verde_agua"
         android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tabBackground="#F543959F"
+        app:tabBackground="@color/verde_agua"
         app:tabIconTint="@color/black"
         app:tabIndicatorColor="#3F51B5"
         app:tabIndicatorGravity="bottom"
