@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">FinalTask</string>
-    <string name="Início">Inicio</string>
-    <string name="Cardápios">Cardapios</string>
-    <string name="Diário">Diarios</string>
+    <string name="Início">Início</string>
+    <string name="Cardápios">Cardápios</string>
+    <string name="Diário">Diário</string>
+    <string name="Profile">Profile</string>
+    <string name="Em_Gramas">Gramas</string>
+    <string name="Peso">Peso</string>
+    <string name="Peso_doisPontos">Peso:</string>
+    <string name="Idade">Idade</string>
+    <string name="Idade_doisPontos">Idade:</string>
+    <string name="Nome">Nome</string>
+    <string name="Nome_doisPontos">Nome:</string>
 </resources>
