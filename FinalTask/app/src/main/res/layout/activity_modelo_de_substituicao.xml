@@ -7,46 +7,86 @@
     android:background="#F543959F"
     tools:context=".modeloDeSubstituicao">
 
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="65dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="24dp"
+        android:background="#F543959F"
+        android:contentDescription="Edite seu cardápio"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout2" />
+
     <ToggleButton
         android:id="@+id/toggleButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginBottom="8dp"
         android:text="Modelo"
         android:textOff="fixos"
         android:textOn="flexiveis"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="118dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="41dp"
-        android:layout_height="40dp"
+        android:layout_width="62dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
         android:text="+"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="598dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
         android:text="Criar cardápio flexivel"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="609dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 
     <com.google.android.material.tabs.TabLayout
-        android:layout_width="415dp"
-        android:layout_height="59dp"
+        android:id="@+id/tabLayout4"
+        android:layout_width="412dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="29dp"
         android:background="  #F543959F"
         android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:tabBackground="#F543959F"
         app:tabIconTint="@color/black"
         app:tabIndicatorColor="#3F51B5"
         app:tabIndicatorGravity="bottom"
         app:tabMode="fixed"
         app:tabSelectedTextColor="#F5F3F4F4"
-        app:tabTextColor="#F6EFEF"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="4dp">
+        app:tabTextColor="#F6EFEF">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
@@ -78,26 +118,230 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         android:text="Cardápios"
         android:textAllCaps="true"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="83dp" />
+        app:layout_constraintBottom_toTopOf="@+id/toggleButton2"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout4" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="305dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="38dp"
         android:clickable="true"
         android:text="Visualize a lista de substituições"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="666dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="334dp"
-        android:layout_height="409dp"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="173dp" />
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="219dp"
+        android:layout_height="356dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton2">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="218dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="133dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="133dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="133dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="133dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="133dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="133dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="133dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="133dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="133dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="133dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="133dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="133dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="133dp"
+                android:padding="3dip"
+                android:text="Cardápio"
+                android:visibility="invisible" />
+        </TableRow>
+
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

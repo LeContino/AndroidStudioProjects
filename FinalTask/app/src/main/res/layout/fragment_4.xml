@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment4">
 
     <?xml version="1.0" encoding="utf-8"?>
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#F543959F"
@@ -18,126 +17,220 @@
             android:id="@+id/editTextProteinas"
             android:layout_width="98dp"
             android:layout_height="50dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="291dp"
+            android:layout_marginRight="291dp"
+            android:layout_marginBottom="8dp"
             android:hint="em gramas"
-            tools:layout_editor_absoluteX="22dp"
-            tools:layout_editor_absoluteY="318dp" />
+            app:layout_constraintBottom_toTopOf="@+id/textView21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextGorduras"
             android:layout_width="98dp"
             android:layout_height="50dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginEnd="287dp"
+            android:layout_marginRight="287dp"
             android:hint="em gramas"
-            tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="507dp" />
+            app:layout_constraintBottom_toTopOf="@+id/textView23"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextCalorias"
             android:layout_width="98dp"
             android:layout_height="50dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginEnd="287dp"
+            android:layout_marginRight="287dp"
+            android:layout_marginBottom="12dp"
             android:hint="em gramas"
-            tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="410dp" />
+            app:layout_constraintBottom_toTopOf="@+id/textView22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextCarboidratos"
             android:layout_width="98dp"
             android:layout_height="50dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="291dp"
+            android:layout_marginRight="291dp"
+            android:layout_marginBottom="6dp"
             android:hint="em gramas"
-            tools:layout_editor_absoluteX="22dp"
-            tools:layout_editor_absoluteY="597dp" />
+            app:layout_constraintBottom_toTopOf="@+id/textView24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextPeso"
             android:layout_width="264dp"
             android:layout_height="49dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginRight="66dp"
             android:hint="Peso"
-            tools:layout_editor_absoluteX="81dp"
-            tools:layout_editor_absoluteY="208dp" />
+            app:layout_constraintBottom_toTopOf="@+id/textView20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/editTexIdade" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTexIdade"
             android:layout_width="264dp"
             android:layout_height="49dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginRight="66dp"
             android:hint="Idade"
-            tools:layout_editor_absoluteX="81dp"
-            tools:layout_editor_absoluteY="149dp" />
+            app:layout_constraintBottom_toTopOf="@+id/editTextPeso"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextName"
             android:layout_width="264dp"
             android:layout_height="49dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginRight="66dp"
+            android:layout_marginBottom="7dp"
             android:hint="Nome"
-            tools:layout_editor_absoluteX="81dp"
-            tools:layout_editor_absoluteY="93dp" />
+            app:layout_constraintBottom_toTopOf="@+id/editTexIdade"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout5" />
 
         <TextView
             android:id="@+id/textView23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginEnd="103dp"
+            android:layout_marginRight="103dp"
             android:text="Recomendação de carboidratos"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="22dp"
-            tools:layout_editor_absoluteY="557dp" />
+            app:layout_constraintBottom_toTopOf="@+id/editTextCarboidratos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextGorduras" />
 
         <TextView
             android:id="@+id/textView22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginEnd="133dp"
+            android:layout_marginRight="133dp"
             android:text="Recomendação de gorduras"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="480dp" />
+            app:layout_constraintBottom_toTopOf="@+id/editTextGorduras"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCalorias" />
 
         <TextView
             android:id="@+id/textView21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="142dp"
+            android:layout_marginRight="142dp"
+            android:layout_marginBottom="7dp"
             android:text="Recomendação de calorias"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="383dp" />
+            app:layout_constraintBottom_toTopOf="@+id/editTextCalorias"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextProteinas" />
 
         <TextView
             android:id="@+id/textView20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="133dp"
+            android:layout_marginRight="133dp"
             android:text="Recomendação de proteinas"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="22dp"
-            tools:layout_editor_absoluteY="283dp" />
+            app:layout_constraintBottom_toTopOf="@+id/editTextProteinas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPeso" />
 
         <TextView
             android:id="@+id/textView19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="42dp"
             android:text="Peso:"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="22dp"
-            tools:layout_editor_absoluteY="220dp" />
+            app:layout_constraintBottom_toTopOf="@+id/textView20"
+            app:layout_constraintEnd_toStartOf="@+id/editTextPeso"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
         <TextView
             android:id="@+id/textView18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
             android:text="Idade:"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="22dp"
-            tools:layout_editor_absoluteY="162dp" />
+            app:layout_constraintBottom_toTopOf="@+id/textView19"
+            app:layout_constraintEnd_toStartOf="@+id/editTexIdade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
         <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout5"
             android:layout_width="415dp"
             android:layout_height="59dp"
             android:background="  #F543959F"
             android:clickable="true"
+            app:layout_constraintBottom_toTopOf="@+id/editTextName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:tabBackground="#F543959F"
             app:tabIconTint="@color/black"
             app:tabIndicatorColor="#3F51B5"
             app:tabIndicatorGravity="bottom"
             app:tabMode="auto"
             app:tabSelectedTextColor="#F5F3F4F4"
-            app:tabTextColor="#F6EFEF"
-            tools:layout_editor_absoluteX="-2dp"
-            tools:layout_editor_absoluteY="4dp">
+            app:tabTextColor="#F6EFEF">
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
@@ -164,19 +257,34 @@
             android:id="@+id/textView17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="29dp"
             android:text="Nome:"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="22dp"
-            tools:layout_editor_absoluteY="106dp" />
+            app:layout_constraintBottom_toTopOf="@+id/textView18"
+            app:layout_constraintEnd_toStartOf="@+id/editTextName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout5" />
 
         <TextView
             android:id="@+id/textView24"
-            android:layout_width="340dp"
-            android:layout_height="37dp"
+            android:layout_width="330dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
             android:clickable="true"
             android:text="Deseja adicionar alimentos fixos?"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="22dp"
-            tools:layout_editor_absoluteY="647dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCarboidratos" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

@@ -11,18 +11,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#F543959F"
+        android:visibility="visible"
         tools:context=".diario">
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="41dp"
-            android:layout_height="40dp"
+            android:layout_width="65dp"
+            android:layout_height="54dp"
             android:layout_marginStart="116dp"
             android:layout_marginLeft="116dp"
-            android:layout_marginTop="27dp"
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
-            android:layout_marginBottom="22dp"
             android:text="+"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView13"
@@ -43,7 +42,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button5"
-            app:layout_constraintTop_toBottomOf="@+id/view3" />
+            app:layout_constraintTop_toBottomOf="@+id/view3"
+            app:layout_constraintVertical_bias="0.483" />
 
         <TextView
             android:id="@+id/textView7"
@@ -52,13 +52,9 @@
             android:layout_marginStart="116dp"
             android:layout_marginLeft="116dp"
             android:layout_marginTop="23dp"
-            android:layout_marginEnd="116dp"
-            android:layout_marginRight="116dp"
             android:text="Diário Alimentar"
             android:textAllCaps="true"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView10"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tabLayout3" />
 
@@ -84,7 +80,7 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Início" />
+                android:text="@string/inicio" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
@@ -103,49 +99,20 @@
         </com.google.android.material.tabs.TabLayout>
 
         <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="19dp"
-            android:layout_marginEnd="131dp"
-            android:layout_marginRight="131dp"
-            android:clickable="true"
-            android:text=">"
-            app:layout_constraintBottom_toTopOf="@+id/view3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView11"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-        <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
-            android:layout_marginLeft="56dp"
-            android:layout_marginTop="19dp"
-            android:layout_marginEnd="37dp"
-            android:layout_marginRight="37dp"
-            android:layout_marginBottom="19dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="23dp"
             android:text="preencher com dia"
             app:layout_constraintBottom_toTopOf="@+id/view3"
-            app:layout_constraintEnd_toStartOf="@+id/textView10"
-            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+            app:layout_constraintStart_toEndOf="@+id/imageButton5"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="93dp"
-            android:layout_marginLeft="93dp"
-            android:layout_marginTop="65dp"
-            android:layout_marginBottom="19dp"
-            android:clickable="true"
-            android:text="<"
-            app:layout_constraintBottom_toTopOf="@+id/view3"
-            app:layout_constraintEnd_toStartOf="@+id/textView11"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tabLayout3" />
 
         <View
             android:id="@+id/view3"
@@ -153,13 +120,44 @@
             android:layout_height="476dp"
             android:layout_marginStart="44dp"
             android:layout_marginLeft="44dp"
-            android:layout_marginTop="19dp"
+            android:layout_marginTop="1dp"
             android:layout_marginEnd="39dp"
             android:layout_marginRight="39dp"
+            android:layout_marginBottom="15dp"
             app:layout_constraintBottom_toTopOf="@+id/button5"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+            app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="88dp"
+            android:layout_height="62dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:background="#F543959F"
+            android:contentDescription="proximo"
+            android:src="@drawable/avan_ar"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.738"
+            app:layout_constraintStart_toEndOf="@+id/view3"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="80dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:background="#F543959F"
+            android:contentDescription="anterior"
+            android:src="@drawable/retroceder"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
+            app:layout_constraintEnd_toStartOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

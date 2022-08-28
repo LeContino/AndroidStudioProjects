@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="131dp"
         android:layout_marginLeft="131dp"
+        android:layout_marginTop="33dp"
         android:layout_marginEnd="131dp"
         android:layout_marginRight="131dp"
         android:autoText="false"
@@ -49,10 +50,11 @@
         android:textStyle="bold"
         android:visibility="visible"
         app:autoSizeTextType="none"
+        app:layout_constraintBottom_toTopOf="@+id/BalanceTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="33dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/BalanceTextView"
@@ -79,9 +81,16 @@
         android:id="@+id/imageView5"
         android:layout_width="366dp"
         android:layout_height="272dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="48dp"
         android:visibility="visible"
-        app:srcCompat="@drawable/newbalance"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="288dp" />
+        app:layout_constraintBottom_toTopOf="@+id/StartButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BalanceTextView"
+        app:srcCompat="@drawable/newbalance" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
