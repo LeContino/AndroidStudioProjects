@@ -33,9 +33,7 @@ public class login extends AppCompatActivity {
     public void GetSenha(View view){
         password = (EditText) findViewById(R.id.editTextPassword);
     }
-    private void HasAccount(View view){
 
-    }
 
     public void onCheckboxClicked(View view) {
         // Is the view now checked?
@@ -62,7 +60,13 @@ public class login extends AppCompatActivity {
             startActivity(i);
         }
         else{
-            Toast.makeText(getApplicationContext(), "Faltam dados", Toast.LENGTH_SHORT).show();
+
+            if(password == null){
+                Toast.makeText(getApplicationContext(), "Complete a senha", Toast.LENGTH_SHORT).show();
+            }
+            else if(login == null){
+                Toast.makeText(getApplicationContext(), "Complete o login", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }

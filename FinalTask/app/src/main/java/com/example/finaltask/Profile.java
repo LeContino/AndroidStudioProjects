@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-public class Fragment4 extends Fragment {
+public class Profile extends Fragment {
 
     private EditText nome,idade,peso,calorias,proteinas,gorduras,carboidratos;
     Button salvar;
@@ -19,7 +19,7 @@ public class Fragment4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_4, container, false);
+        View view = inflater.inflate(R.layout.fr_profile, container, false);
 
         nome = (EditText) getView().findViewById(R.id.editTextName);
         idade = (EditText) getView().findViewById(R.id.editTexIdade);

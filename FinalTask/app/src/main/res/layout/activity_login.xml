@@ -157,6 +157,7 @@
         android:layout_marginRight="230dp"
         android:layout_marginBottom="15dp"
         android:clickable="true"
+        android:onClick="TrocarSenha"
         android:text="Esqueceu a senha?"
         android:textColor="#094561"
         android:textIsSelectable="true"

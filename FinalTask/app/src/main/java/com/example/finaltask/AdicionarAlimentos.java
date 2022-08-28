@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.R.drawable;
 import android.view.View;
 import android.widget.EditText;
 
@@ -22,7 +21,7 @@ public class AdicionarAlimentos extends AppCompatActivity {
 
     public void OnExit(View view)
     {
-        Intent i = new Intent(this, Fragment3.class);
+        Intent i = new Intent(this, Diario.class);
         startActivity(i);
     }
 }
