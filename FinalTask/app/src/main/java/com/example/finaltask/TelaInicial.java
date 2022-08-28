@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import com.google.android.material.tabs.TabLayout;
 
+
 public class TelaInicial extends AppCompatActivity {
 
     private TabLayout tabLayout;
@@ -29,10 +30,4 @@ public class TelaInicial extends AppCompatActivity {
         vpAdapter.addFragment(new Fragment4(),"Configurações");
         viewPager.setAdapter(vpAdapter);
     }
-    public void NextPage(View view)
-    {
-        Intent i = new Intent(this, TelaInicial.class);
-        startActivity(i);
-    }
-
 }

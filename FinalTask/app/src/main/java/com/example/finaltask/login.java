@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -17,7 +18,6 @@ public class login extends AppCompatActivity {
     private EditText login = null;
     private EditText password = null;
     private EditText remember = null;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,14 +42,16 @@ public class login extends AppCompatActivity {
         boolean checked = ((CheckBox) view).isChecked();
 
         // Check which checkbox was clicked
-        switch(view.getId()) {
-            case R.id.checkBox_LembrarEmail:
-                if (checked){
-                    remember = login;
-                }
-            else
-                break;
+        if(view.getId() == R.id.checkBox_LembrarEmail ) {
+            if (checked){
+                remember = login;
+            }
         }
+    }
+
+    public void TrocarSenha (View view) {
+        Intent i = new Intent(this, RedefinicaoDeSenhas.class);
+        startActivity(i);
     }
 
     public void NextPage(View view)
@@ -59,9 +61,8 @@ public class login extends AppCompatActivity {
             Intent i = new Intent(this, TelaInicial.class);
             startActivity(i);
         }
-       /* else
-        {
-            //redefinir senhas
-        }*/
+        else{
+            Toast.makeText(getApplicationContext(), "Faltam dados", Toast.LENGTH_SHORT).show();
+        }
     }
 }
