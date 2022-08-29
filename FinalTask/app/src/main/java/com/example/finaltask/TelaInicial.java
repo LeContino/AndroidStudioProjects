@@ -3,11 +3,8 @@ package com.example.finaltask;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
 import android.os.Bundle;
-
 import com.google.android.material.tabs.TabLayout;
-
 
 public class TelaInicial extends AppCompatActivity {
 
@@ -27,6 +24,7 @@ public class TelaInicial extends AppCompatActivity {
         vpAdapter.addFragment(new Cardapios(),"Cardápios");
         vpAdapter.addFragment(new Diario(),"Diário");
         vpAdapter.addFragment(new Profile(),"Configurações");
+        vpAdapter.addFragment(new MostrarCardapio(),"MostrarCardapio");
         viewPager.setAdapter(vpAdapter);
     }
 }

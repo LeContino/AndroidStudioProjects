@@ -14,7 +14,7 @@
 
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/GeradorDeCardapio"
             android:layout_width="57dp"
             android:layout_height="51dp"
             android:layout_marginStart="42dp"
@@ -23,6 +23,8 @@
             android:layout_marginEnd="328dp"
             android:layout_marginRight="328dp"
             android:layout_marginBottom="40dp"
+            android:clickable="true"
+            android:onClick="geraCardapio"
             android:text="+"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -57,7 +59,7 @@
             android:layout_marginTop="33dp"
             android:layout_marginBottom="12dp"
             android:text="+"
-            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintBottom_toTopOf="@+id/GeradorDeCardapio"
             app:layout_constraintEnd_toStartOf="@+id/textView4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
@@ -114,7 +116,10 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo1"
                     android:layout_width="218dp"
+                    android:clickable="true"
+                    android:onClick="MostrarCardapio"
                     android:padding="3dip"
                     android:text="Cardápio"
                     android:visibility="invisible" />
@@ -127,6 +132,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo2"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -140,6 +146,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo3"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -153,6 +160,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo4"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -166,6 +174,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo5"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -179,6 +188,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo6"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -192,6 +202,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo7"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -205,6 +216,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo7"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -218,6 +230,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo9"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -231,6 +244,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo10"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -244,6 +258,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo11"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -257,6 +272,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo12"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -270,6 +286,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo13"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -283,6 +300,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/CardapioFixo14"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -305,7 +323,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.53"
-            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintStart_toEndOf="@+id/GeradorDeCardapio"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
             app:layout_constraintVertical_bias="0.0" />
 

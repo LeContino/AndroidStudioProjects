@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ListaAlimentos{
     String nome;//NOME DA CLASSE DE ALIMENTOS
-    Vector<Alimento> lista;
+    Vector<Alimento> lista = new Vector<Alimento>();
     public ListaAlimentos(String nome){
         this.nome = nome;
     }

@@ -6,10 +6,11 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
+
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -24,7 +25,6 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
-
     public void GetLogin(View view){
 
         login =(EditText) findViewById(R.id.email);
@@ -33,7 +33,6 @@ public class login extends AppCompatActivity {
     public void GetSenha(View view){
         password = (EditText) findViewById(R.id.editTextPassword);
     }
-
 
     public void onCheckboxClicked(View view) {
         // Is the view now checked?
@@ -54,12 +53,12 @@ public class login extends AppCompatActivity {
 
     public void NextPage(View view)
     {
-        if(password != null  && login != null)
-        {
-            Intent i = new Intent(this, TelaInicial.class);
-            startActivity(i);
-        }
-        else{
+       //if(password != null  && login != null)
+        //{
+        Intent i = new Intent(this, TelaInicial.class);
+        startActivity(i);
+       // }
+ /*       else{
 
             if(password == null){
                 Toast.makeText(getApplicationContext(), "Complete a senha", Toast.LENGTH_SHORT).show();
@@ -67,6 +66,8 @@ public class login extends AppCompatActivity {
             else if(login == null){
                 Toast.makeText(getApplicationContext(), "Complete o login", Toast.LENGTH_SHORT).show();
             }
-        }
+
+ */
+       // }
     }
 }

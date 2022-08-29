@@ -11,23 +11,22 @@ import android.view.View;
 //https://acervolima.com/imageview-no-android-com-exemplo/#:~:text=Para%20adicionar%20uma%20imagem%20do%20Android%20Studio%20Arraste,imagem%20diferente%20de%20recursos%20drawable%20do%20Android%20Studio%3A
 
 public class MainActivity extends AppCompatActivity {
-private Button start;
+    private Button start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(this, "OnCreate", Toast.LENGTH_SHORT).show();
         // The activity is created
 
-        start = (Button) findViewById(R.id.StartButton);
+        /*start = (Button) findViewById(R.id.StartButton);
 
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 NextPage(v);
             }
-        });
+        });*/
     }
     @Override
     protected void onStart() {
@@ -58,6 +57,6 @@ private Button start;
     public void NextPage(View view)
     {
         Intent i = new Intent(this, login.class);
-        startActivity(i);
+         startActivity(i);
     }
 }

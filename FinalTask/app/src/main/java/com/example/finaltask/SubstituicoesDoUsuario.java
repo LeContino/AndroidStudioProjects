@@ -3,34 +3,53 @@ package com.example.finaltask;
 import java.util.Vector;
 
 public class SubstituicoesDoUsuario{
-    Vector<ListaAlimentos> listaClasses;
+    public static ListaAlimentos frutas = new ListaAlimentos("Frutas");
+    public static ListaAlimentos lacteos;
+    public static ListaAlimentos carnes = new ListaAlimentos("Carnes Magras");
+    public static ListaAlimentos carbos = new ListaAlimentos("Carboidratos");
 
-    public SubstituicoesDoUsuario() {
-        ListaAlimentos frutas1 = new ListaAlimentos("Frutas 1");
-        frutas1.addAlimentoParams("Banana",70,20,3,6,100);
-        frutas1.addAlimentoParams("Pera",100,10,3,6,60);
-        frutas1.addAlimentoParams("Bergamota",120,20,3,6,100);
-        listaClasses.add(frutas1);
-
-        ListaAlimentos lacteos = new ListaAlimentos("Lácteos");
-        frutas1.addAlimentoParams("Iogurte",70,20,3,6,100);
-        frutas1.addAlimentoParams("Requeijão",100,10,3,6,60);
-        frutas1.addAlimentoParams("Leite Desnatado",120,20,3,6,100);
-        listaClasses.add(lacteos);
-
-        ListaAlimentos carnes = new ListaAlimentos("Carnes Magras");
-        frutas1.addAlimentoParams("Peito de Frango",70,20,3,6,100);
-        frutas1.addAlimentoParams("Bife de Alcatra",100,10,3,6,60);
-        frutas1.addAlimentoParams("Filé de Tilápia",120,20,3,6,100);
-        listaClasses.add(carnes);
-
-        ListaAlimentos carbos = new ListaAlimentos("Carboidratos");
-        frutas1.addAlimentoParams("Arroz Branco",70,20,3,6,100);
-        frutas1.addAlimentoParams("Arroz Integral",100,10,3,6,60);
-        frutas1.addAlimentoParams("Batata Inglesa",120,20,3,6,100);
-        listaClasses.add(carbos);
+    public static void SubstituicoesDoUsuarioFrutas() {
+        frutas.addAlimentoParams("Banana", 70, 20, 3, 6, 100);
+        frutas.addAlimentoParams("Pera", 100, 10, 3, 6, 60);
+        frutas.addAlimentoParams("Bergamota", 120, 20, 3, 6, 100);
     }
-    public Vector<ListaAlimentos> getClassesDeAlimentos(){
-        return listaClasses;
+
+    public static void SubstituicoesDoUsuarioLacteos() {
+        lacteos = new ListaAlimentos("Lácteos");
+        lacteos.addAlimentoParams("Iogurte", 70, 20, 3, 6, 100);
+        lacteos.addAlimentoParams("Requeijão", 100, 10, 3, 6, 60);
+        lacteos.addAlimentoParams("Leite Desnatado", 120, 20, 3, 6, 100);
+    }
+
+    public static void SubstituicoesDoUsuarioCarnes() {
+        carnes.addAlimentoParams("Peito de Frango", 70, 20, 3, 6, 100);
+        carnes.addAlimentoParams("Bife de Alcatra", 100, 10, 3, 6, 60);
+        carnes.addAlimentoParams("Filé de Tilápia", 120, 20, 3, 6, 100);
+    }
+
+    public static void SubstituicoesDoUsuarioCarbos() {
+        carbos.addAlimentoParams("Arroz Branco",70,20,3,6,100);
+        carbos.addAlimentoParams("Arroz Integral",100,10,3,6,60);
+        carbos.addAlimentoParams("Batata Inglesa",120,20,3,6,100);
+    }
+
+    public static ListaAlimentos getCarne(){
+        SubstituicoesDoUsuarioCarnes();
+        return carnes;
+    }
+
+    public static ListaAlimentos getCarbo(){
+        SubstituicoesDoUsuarioCarbos();
+        return carbos;
+    }
+
+    public static ListaAlimentos getLacteo(){
+        SubstituicoesDoUsuarioLacteos();
+        return carbos;
+    }
+
+    public static ListaAlimentos getFrutas(){
+        SubstituicoesDoUsuarioFrutas();
+        return frutas;
     }
 }

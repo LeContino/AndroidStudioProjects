@@ -22,6 +22,7 @@
             android:layout_marginLeft="116dp"
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
+            android:layout_marginBottom="4dp"
             android:text="+"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView13"
@@ -79,21 +80,689 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton5"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-        <View
-            android:id="@+id/view3"
-            android:layout_width="328dp"
-            android:layout_height="476dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginLeft="44dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="39dp"
-            android:layout_marginRight="39dp"
-            android:layout_marginBottom="15dp"
+
+        <TableLayout
+            android:id="@+id/tableAlimentos"
+            android:layout_width="387dp"
+            android:layout_height="466dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="18dp"
             app:layout_constraintBottom_toTopOf="@+id/button5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+            app:layout_constraintTop_toBottomOf="@+id/imageButton5">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Refeição" />
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:padding="3dip"
+                    android:text="Alimento" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Porção" />
+
+                <TextView
+                    android:layout_width="37dp"
+                    android:padding="3dip"
+                    android:text="Cal" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Carb" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Proteinas" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Gorduras" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text=" 0g"
+                    android:visibility="invisible" />
+            </TableRow>
+        </TableLayout>
 
         <ImageButton
             android:id="@+id/imageButton4"
