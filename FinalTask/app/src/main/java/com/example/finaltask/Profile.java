@@ -21,14 +21,14 @@ public class Profile extends Fragment {
 
         View view = inflater.inflate(R.layout.fr_profile, container, false);
 
-        nome = (EditText) getView().findViewById(R.id.editTextName);
-        idade = (EditText) getView().findViewById(R.id.editTexIdade);
-        peso = (EditText) getView().findViewById(R.id.editTextPeso);
-        calorias = (EditText) getView().findViewById(R.id.editTextCalorias);
-        proteinas =(EditText) getView().findViewById(R.id.editTextProteinas);
-        carboidratos = (EditText) getView().findViewById(R.id.editTextCarboidratos);
-        gorduras = (EditText) getView().findViewById(R.id.editTextGorduras);
-        salvar = (Button) getView().findViewById(R.id.btSubmit);
+        nome = (EditText) view.findViewById(R.id.editTextName);
+        idade = (EditText) view.findViewById(R.id.editTexIdade);
+        peso = (EditText) view.findViewById(R.id.editTextPeso);
+        calorias = (EditText) view.findViewById(R.id.editTextCalorias);
+        proteinas =(EditText) view.findViewById(R.id.editTextProteinas);
+        carboidratos = (EditText) view.findViewById(R.id.editTextCarboidratos);
+        gorduras = (EditText) view.findViewById(R.id.editTextGorduras);
+        salvar = (Button) view.findViewById(R.id.btSubmit);
 
         salvar.setOnClickListener(new View.OnClickListener() {
             @Override

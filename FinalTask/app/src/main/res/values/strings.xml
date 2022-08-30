@@ -31,6 +31,8 @@
     <string name="Carboidratos_hint">Preencha os Carboidratos</string>
     <string name="Proteinas_hint">Preencha as Proteinas</string>
     <string name="Gorduras_hint">Preencha as Gorduras</string>
+    <string name="Zero">0g</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

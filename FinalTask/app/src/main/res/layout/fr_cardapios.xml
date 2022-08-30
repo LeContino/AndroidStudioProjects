@@ -216,7 +216,7 @@
                 android:layout_height="match_parent"
 
                 <TextView
-                    android:id="@+id/CardapioFixo7"
+                    android:id="@+id/CardapioFixo8"
                     android:layout_width="133dp"
                     android:padding="3dip"
                     android:text="Cardápio"
@@ -342,7 +342,14 @@
             app:layout_constraintBottom_toTopOf="@+id/tableLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView6" />
-
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
