@@ -15,7 +15,7 @@
         tools:context=".diario">
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/Add"
             android:layout_width="65dp"
             android:layout_height="54dp"
             android:layout_marginStart="116dp"
@@ -42,7 +42,7 @@
             android:text="Adicionar refeição"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button5"
+            app:layout_constraintStart_toEndOf="@+id/Add"
             app:layout_constraintTop_toBottomOf="@+id/view3"
             app:layout_constraintVertical_bias="0.483" />
 
@@ -91,7 +91,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="18dp"
-            app:layout_constraintBottom_toTopOf="@+id/button5"
+            app:layout_constraintBottom_toTopOf="@+id/Add"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton5">
@@ -134,39 +134,247 @@
             </TableRow>
 
             <TableRow
+                android:id="@+id/gordura"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:id="@+id/ref1"
+                    android:layout_height="match_parent"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/al1"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/qntd1"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/kcal1"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/carb1"
+                    android:layout_height="match_parent"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/prot1"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/gord1"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
                 <TextView
+                    android:id="@+id/ref2"
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
+                    android:id="@+id/al2"
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
+                    android:id="@+id/qntd2"
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
+                    android:id="@+id/kcal2"
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
+                    android:id="@+id/carb2"
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
+                    android:id="@+id/prot2"
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+                <TextView
+                    android:id="@+id/gord2"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:id="@+id/ref3"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/al3"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/qntd3"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/kcal3"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/carb3"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/prot3"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+                <TextView
+                    android:id="@+id/gord3"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:id="@+id/ref4"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/al4"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/qntd4"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/kcal4"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/carb4"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/prot4"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+                <TextView
+                    android:id="@+id/gord4"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:id="@+id/ref5"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/al5"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/qntd5"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/kcal5"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/carb5"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/prot5"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+                <TextView
+                    android:id="@+id/gord5"
+                    android:padding="3dip"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
             </TableRow>
 
@@ -178,70 +386,32 @@
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
             </TableRow>
 
@@ -253,69 +423,32 @@
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
             </TableRow>
 
@@ -327,32 +460,68 @@
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
             </TableRow>
 
@@ -364,32 +533,68 @@
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/Zero"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
             </TableRow>
 
@@ -401,32 +606,32 @@
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
             </TableRow>
 
@@ -438,32 +643,32 @@
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
             </TableRow>
 
@@ -475,183 +680,34 @@
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
 
                 <TextView
                     android:padding="3dip"
-                    android:text=" 0g"
+                    android:text="@string/Zero"
                     android:visibility="invisible" />
             </TableRow>
-
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-
-                <TextView
-                    android:padding="3dip"
-                    android:text=" 0g"
-                    android:visibility="invisible" />
-            </TableRow>
-
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -792,6 +848,14 @@
             app:layout_constraintEnd_toStartOf="@+id/textView7"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

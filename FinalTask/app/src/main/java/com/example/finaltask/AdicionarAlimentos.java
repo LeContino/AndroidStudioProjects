@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class AdicionarAlimentos extends AppCompatActivity {
-
+    private Diario d = new Diario();
     private EditText nome;
     private EditText quantidade;
-    private EditText carb;
+    private EditText carbo;
     private EditText prot;
     private EditText gord;
     private EditText kcal;
@@ -23,52 +24,53 @@ public class AdicionarAlimentos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adicionar_alimentos);
 
+        nome = (EditText) findViewById(R.id.editTextAlimento);
+        quantidade = (EditText) findViewById(R.id.editTextPorcao);
+        carbo = (EditText) findViewById(R.id.editTextCarb);
+        prot = (EditText) findViewById(R.id.editTextProt);
+        gord = (EditText) findViewById(R.id.editTextFat);
+        kcal = (EditText) findViewById(R.id.editTextCal);
+        adicionar =(Button) findViewById(R.id.Adicionar);
+
+
         adicionar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nome = (EditText) findViewById(R.id.editTextAlimento);
-                quantidade = (EditText) findViewById(R.id.editTextPorcao);
-                carb = (EditText) findViewById(R.id.editTextCarb);
-                prot = (EditText) findViewById(R.id.editTextProt);
-                gord = (EditText) findViewById(R.id.editTextFat);
-                kcal = (EditText) findViewById(R.id.editTextCal);
-
-                OnExit(v);
+                //CadastrarLinha();
+                MostrarTela();
+                OnExit(v); // retorna a tela anterior
             }
         });
     }
 
-    public String getAlimento() {
-        return nome.toString();
+    public void MostrarTela(){
+        d.alimento.setVisibility(View.VISIBLE);
+        d.qnt.setVisibility(View.VISIBLE);
+        d.cal.setVisibility(View.VISIBLE);
+        d.carb.setVisibility(View.VISIBLE);
+        d.proteina.setVisibility(View.VISIBLE);
+        d.gordura.setVisibility(View.VISIBLE);
     }
 
-    public  EditText getQuantidade() {
-        return quantidade;
-    }
-
-    public  EditText getCarb() {
-
-        return carb;
-    }
-
-    public  EditText getProt() {
-
-        return prot;
-    }
-
-    public  EditText getGord() {
-
-        return gord;
-    }
-
-    public  EditText getKcal() {
-
-        return kcal;
-    }
+    /*public void CadastrarLinha(){
+        d.alimento.setText(data);
+        d.qnt.setText(quantidade.getText().toString());
+        d.cal.setText(kcal.getText().toString());
+        d.carb.setText(carbo.getText().toString());
+        d.proteina.setText(prot.getText().toString());
+        d.gordura.setText(gord.getText().toString());
+    }*/
 
     public void OnExit(View view)
     {
         Intent i = new Intent(this, Diario.class);
+        i.putExtra("alimento", nome.getText().toString());
+        i.putExtra("qnt", quantidade.getText().toString());
+        i.putExtra("cal", kcal.getText().toString());
+        i.putExtra("carb", carbo.getText().toString());
+        i.putExtra("proteina", prot.getText().toString());
+        i.putExtra("gordura", gord.getText().toString());
+        //d.CadastrarLinha();
         startActivity(i);
     }
 }

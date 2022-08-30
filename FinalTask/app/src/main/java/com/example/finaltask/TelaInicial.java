@@ -24,7 +24,6 @@ public class TelaInicial extends AppCompatActivity {
         vpAdapter.addFragment(new Cardapios(),"Cardápios");
         vpAdapter.addFragment(new Diario(),"Diário");
         vpAdapter.addFragment(new Profile(),"Configurações");
-        vpAdapter.addFragment(new MostrarCardapio(),"MostrarCardapio");
         viewPager.setAdapter(vpAdapter);
     }
 }
